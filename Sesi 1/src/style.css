@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    text-align: justify;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+.navbar, .nav, .about, .background, .tujuan, .alasan, .additional {
+    display: flex;
+    margin: 0;
+}
+
+.nav-content, .name {
+    margin: 20px;
+}
+.navbar {
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.name {
+    font-weight: bold;
+}
+.navbar-container {
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.content {
+    align-self: center;
+    list-style-type: none;
+}
+.foto {
+    margin: auto;
+}
+.about {
+    flex-direction: column;
+    margin-top: 40px;
+}
+h3 {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color:orange;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+img {
+    margin: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+.button {
+    display: flex;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: auto;
+    align-items: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.additional {
+    justify-content: space-between;
+    width: 90%;
+}
+
+h3 {
+    font-size: 48px;
+    font-family: 'Playfair Display', serif;
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Cormorant Garamond', serif; */
+}
