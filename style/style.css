@@ -1,0 +1,39 @@
+/* .flex {
+    display: "flex"
+} */
+
+.hidden {
+    display: "none";
+}
+
+.cover-image {
+    height: 55vh;
+}
+
+.button-bottom {
+    margin: 10px auto 30px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.sec-color {
+    background-color: #FD7F00;
+    color: white
+}
+
+.pri-color {
+    background: #0141CF;
+}
+
+.input-angka {
+    width: 80px;
+}

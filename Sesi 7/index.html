@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Tugas FWDB</title>
+</head>
+
+<body>
+    <div class="container mt-10">
+        <h1 class="center">Graciella Valeska Liander</h1>
+        <div class="border border-primary p-3 m-3 rounded btn-center">
+            <button type="submit" id="tugas1" class="btn btn-primary">Tugas 1 - Check Password</button>
+        </div>
+
+        <div class="border border-primary p-3 m-3 rounded btn-center">
+            <button type="submit" id="tugas2" class="btn btn-primary">Tugas 2 - Check your grade</button>
+        </div>
+
+        <div class="border border-primary p-3 m-3 rounded btn-center">
+            <button type="submit" id="tugas3" class="btn btn-primary">Tugas 3 - Order a drink</button>
+        </div>
+    </div>
+</body>
+
+<style>
+    .center {
+        text-align: center;
+        margin: 10px;
+    }
+    .btn-center {
+        display: flex;
+        justify-content: space-around;
+    }
+</style>
+
+<script>
+    alert("restart");
+    // Tugas 1
+    $("#tugas1").click(function () {
+        const password ="FWDB";
+        result = window.prompt("Input password");
+        if (result === password) {
+            window.location = "https://www.google.com";
+        } else {
+            alert("Password doesn't match!");
+        }
+    });
+
+    // Tugas 2
+    $("#tugas2").click(function () {
+        result = window.prompt("Input a number");
+        if (result > 80 && result <= 100) {
+            alert("Your grade is A");
+        } else if (result > 60 && result <= 80) {
+            alert("Your grade is B");
+        } else if (result > 40 && result <= 60) {
+            alert("Your grade is C");
+        } else if (result <= 40) {
+            alert("Your grade is D");
+        } else {
+            alert("Cannot calculate your grade");
+        }
+    })
+
+    // Tugas 3
+    $("#tugas3").click(function () {
+        var name = window.prompt("Hello, What is your name");
+        var gender = window.prompt("What is your gender? L/P");
+        var genderValid = true;
+
+        if (gender.toLowerCase() == "l") {
+            alert("Welcome, Mr. " + name);
+            gender = "Mr. "
+        } else if (gender == "p") {
+            alert("Welcome, Mrs. "+ name);
+            gender = "Mrs. "
+        } else {
+            alert("Your gender is not valid");
+            genderValid = false;
+            location.reload();
+            return;
+        }
+
+        if (genderValid) {
+            var order = window.prompt("What do you want to drink?");
+            if (order.toLowerCase() == "jus") {
+                alert("Jus is not available");
+            } else {
+                alert("Okay, " + gender + name + ", " + order + " will be ready!");
+            }
+        }
+    })
+</script>
+
+</html>
