@@ -16,44 +16,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
 
     <!-- Function -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
 
 </head>
 
 <body>
     <div>
         <!-- Desktop -->
-        <header id="desktop-navbar" class="navbar-container pri-color text-white sticky top-0">
+        <header id="desktop-navbar" style="z-index: 10;"
+            class="navbar-container pri-color text-white sticky top-0 desktop">
             <div class="mx-auto flex justify-between w-5/6 py-4">
                 <div class="logo main-font"> K77 Hotels </div>
                 <div class="flex navigation">
-                    <div class="nav mx-3 main-font"> Beranda </div>
-                    <div class="nav mx-3 main-font"> Penawaran </div>
-                    <div class="nav mx-3 main-font"> Kamar </div>
-                    <div class="nav mx-3 main-font"> Layanan </div>
-                    <div class="nav mx-3 main-font"> Review </div>
-                    <div class="nav mx-3 main-font"> Kontak </div>
+                    <div><a href="#" class="nav mx-3 main-font">Home</a> </div>
+                    <div><a href="#" class="nav mx-3 main-font">Offer</a> </div>
+                    <div><a href="#" class="nav mx-3 main-font">Room</a> </div>
+                    <div><a href="#" class="nav mx-3 main-font">Service</a> </div>
+                    <div><a href="#" class="nav mx-3 main-font">Review</a> </div>
+                    <div><a href="#" class="nav mx-3 main-font">Contact</a> </div>
                 </div>
             </div>
         </header>
 
         <!-- Mobile -->
-        <header id="mobile-navbar" class="navbar-container pri-color text-white">
+        <header id="mobile-navbar" class="navbar-container pri-color text-white mobile sticky top-0" style="z-index: 10;">
             <div class="mx-auto py-4 text-center main-font text-xl">
                 K77 Hotels
             </div>
         </header>
 
         <div class="cover-image">
-            <img class="w-full" src="https://lh3.googleusercontent.com/-kL8vAOhV1Pg/VxCFc8TsuWI/AAAAAAAACko/pP4A7HRH5gAAPk6a4wKI1rqn28cIDBNLwCJkC/w960-h960-n-o-k-v1/" />
+            <div id="carouselIndicator" class="carousel slide mobile-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselIndicator" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://lh3.googleusercontent.com/UCx1mL6p0y5lZvkE2VLu813M1xhVjZ5LMr4XQCtldfc0xkmIJdqQITTlr_RSLnPj0wJXUzMU3ABELKcT=w960-h960-n-o-v1" class="d-block w-100" alt="..." height="100px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://lh3.googleusercontent.com/-hQCsCaDt-vs/X4lAeOBMrdI/AAAAAAAAHLc/uDDleJGXbBY_CuESTwklUYROO8JJHWHpQCJUFGAYYCw/w960-h960-n-o-k-v1/" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://lh3.googleusercontent.com/-I9o0ntnZz8Y/XyDWkg7srqI/AAAAAAAA2cI/cqFk1Gsg1u8Gd4YeAcDRcR8dUrkBwopMgCLIBGAYYCw/w960-h960-n-o-k-v1/" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicator"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- <img class="w-full" src="https://lh3.googleusercontent.com/-kL8vAOhV1Pg/VxCFc8TsuWI/AAAAAAAACko/pP4A7HRH5gAAPk6a4wKI1rqn28cIDBNLwCJkC/w960-h960-n-o-k-v1/" /> -->
         </div>
 
         <!-- Order box -->
-        <div class="desktop order-box sticky mx-auto flex justify-around w-5/6 py-4 pri-color rounded-3xl" style="top: 4rem">
-            <div class="check-container p-5 px-10 flex text-white">
+        <div class="desktop order-box sticky mx-auto flex justify-around w-3/4 py-4 pri-color rounded-3xl"
+            style="top: 5rem">
+            <div class="check-container px-10 flex text-white">
                 <div class="flex-col">
                     <label for="checkin">Check In</label>
                     <input type="date" id="checkin" class="placeholder-gray-500 text-gray-800 p-2">
@@ -65,24 +109,29 @@
                 </div>
 
                 <div class="flex-col">
-                    <label for="dewasa">Dewasa</label>
+                    <label for="dewasa">Adults</label>
                     <input type="number" id="dewasa" class="placeholder-gray-500 text-gray-800 p-2 input-angka">
                 </div>
 
                 <div class="flex-col">
-                    <label for="anak">Anak-anak</label>
+                    <label for="anak">Kids</label>
                     <input type="number" min="0" id="anak" class="placeholder-gray-500 text-gray-800 p-2 input-angka">
                 </div>
 
-                <button onclick="book()" style="flex-basis: 120px;">Book Now</button>
+                <button onclick="book()" style="flex-basis: 120px; height: 40px; align-self: center;"
+                    class="sec-color rounded-xl hover:sec-color focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Book
+                    Now</button>
             </div>
         </div>
 
         <!-- Body -->
-        <div class="body w-5/6 mx-auto">
+        <div class="body">
 
             <!-- Section Room -->
             <section id="room">
+                <div class="my-10">
+
+                </div>
                 <section id="room-1">
                     <div class="content">
                         <div class="title">Room</div>
@@ -92,14 +141,12 @@
                 </section>
             </section>
 
-            <!-- Section Layanan -->
-            <section id="layanan">
-                <div class="title">Layanan</div>
-                <section id="layanan-1">
-                    <img src="" alt="">
-                    <div class="judul-layanan"></div>
-                    <div class="desc-layanan"></div>
-                </section>
+            <!-- Section service -->
+            <section id="service-container" class="bg-blue p-10 my-10">
+                <div class="w-5/6 mx-auto">
+                    <div class="title pb-5">Services</div>
+                    <section id="service" class="grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 mobile-service text-center"></section>
+                </div>
             </section>
 
             <!-- Section Review -->
@@ -114,19 +161,20 @@
             </section>
 
             <!-- Section Gallery -->
-            <section id="galeri">
-                <div class="title text-center">Gallery</div>
+            <section id="galeri" class="w-5/6 mx-auto">
+                <div class="title text-center mt-20 mb-10">Gallery</div>
                 <div id="image-container" class="grid grid-cols-3 gap-3"></div>
             </section>
 
             <section id="button" class="w-full flex justify-center flex-col">
-                <button class="sec-color py-4 px-6 my-10 mx-auto rounded-md text-xl main-font font-bold" onclick="book()"> Pesan Sekarang </button>
-                <div  class="mobile" style="height: 60px"></div>
+                <button class="sec-color py-4 px-6 my-10 mx-auto rounded-md text-xl main-font font-bold"
+                    onclick="book()"> Pesan Sekarang </button>
+                <div class="mobile" style="height: 60px"></div>
             </section>
         </div>
 
         <!-- Mobile -->
-        <footer id="mobile-footer" class="pri-color text-white mt-10 w-full fixed bottom-0">
+        <footer id="mobile-footer" class="pri-color text-white mt-10 w-full fixed bottom-0 mobile">
             <div class="flex justify-around w-5/6 mx-auto py-3">
                 <div class="footer-attr grid">
                     <i class="fa fa-home place-self-center" aria-hidden="true"></i>
@@ -144,7 +192,7 @@
         </footer>
 
         <!-- Desktop -->
-        <footer id="desktop-footer">
+        <footer id="desktop-footer" class="desktop">
             <div class="pri-color text-white">
                 footer desktop
             </div>
@@ -156,17 +204,9 @@
 
     function responsive() {
         if (window.innerWidth < 1000) {
-            $("#desktop-navbar").addClass("hidden");
-            $("#desktop-footer").addClass("hidden");
-            $("#mobile-navbar").removeClass("hidden");
-            $("#mobile-footer").removeClass("hidden");
             $('.mobile').removeClass("hidden");
             $('.desktop').addClass("hidden");
         } else {
-            $("#mobile-navbar").addClass("hidden");
-            $("#mobile-footer").addClass("hidden");
-            $("#desktop-navbar").removeClass("hidden");
-            $("#desktop-footer").removeClass("hidden");
             $('.mobile').addClass("hidden");
             $('.desktop').removeClass("hidden");
         }
@@ -177,17 +217,30 @@
             $("#image-container").append(addImage("", image));
         })
     }
+
+    function attachService() {
+        service.forEach((service) => {
+            var icon = service.icon + " service-icon"
+            var appendText = addIcon(icon)
+            appendText += addHTML("font-bold", "", service.name)
+            service.desc.forEach((service) => {
+                appendText += addHTML("", "", service)
+            })
+
+            $("#service").append(addHTML("", "", appendText))
+            // $("#service").append(addHTML("font-bold", "",service.name))
+        })
+    }
     $(document).ready(() => {
         responsive();
         attachGallery();
+        attachService();
     })
 
     const mobileNavbar = $("#mobile-navbar").html();
     $(window).resize(() => {
         responsive();
     });
-
-
 </script>
 
 </html>

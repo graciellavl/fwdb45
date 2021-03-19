@@ -37,3 +37,41 @@
 .input-angka {
     width: 80px;
 }
+
+.nav {
+    color: white; 
+    text-decoration: none;
+}
+
+.nav:hover{
+    cursor: pointer;
+    color: #FD7F00;
+}
+
+.service-icon {
+    font-size: 60px !important;
+    margin: 20px;
+}
+
+.bg-blue {
+    background-color: #FFF3E7;
+}
+.carousel-inner {
+    height: 120%;
+}
+
+#carouselIndicator {
+    height: 100%;
+}
+
+@media (max-width: 400px) {
+    .mobile-service {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
+        align-items: center;
+    }
+    .carousel-inner, .cover-image, #carouselIndicator {
+        height: auto;
+    } 
+    
+}

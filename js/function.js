@@ -18,21 +18,36 @@ const room = [
     }
 ]
 
-const layanan = [
+const service = [
     {
-        name: "24 Hours",
-        desc: "Recepcionist",
-        image: ""
+        icon: "fa fa-cutlery",
+        name: "Food and Beverages",
+        desc: ["Restoran", "24 Hours Room Service", "Free Breakfast and Buffet"],
     },
     {
-        name: "Full Wi-Fi",
-        desc: "Wi-Fi di seluruh ruangan",
-        image: ""
+        icon: "fa fa-wifi",
+        name: "Internet",
+        desc: ["Free Wi-Fi"],
     },
     {
+        icon: "fa fa-credit-card-alt",
+        name: "Payment",
+        desc: ["Cash", "Credit Card", "Debit Card"],
+    },
+    {
+        icon: "fa fa-bell",
+        name: "Service",
+        desc: ["24 Hours Receptionist"]
+    },
+    {
+        icon: "fa fa-bed",
+        name: "Room",
+        desc: ["Air Conditioner", "Hot water"]
+    },
+    {
+        icon: "fa fa-car",
         name: "Parking Lot",
-        desc: "Tempat parkir yang luas",
-        image: ""
+        desc: ["Free parking lot"]
     }
 ]
 
@@ -78,6 +93,10 @@ function addHTML(classname, id, content) {
 
 function addImage (classname, image) {
     return "<a href='https://www.instagram.com/k77hotel/' target='_blank'><img src=\"" + image + "\" class=\"" + classname + "\" /></a>";
+}
+
+function addIcon(classname) {
+    return "<i class=\"" + classname + "\"></i>"
 }
 
 function book() {
