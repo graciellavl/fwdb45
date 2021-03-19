@@ -149,9 +149,9 @@
             <!-- Section service -->
             <section id="service-container" class="bg-soft p-10 my-10">
                 <div class="w-5/6 mx-auto">
-                    <div class="title pb-5">Services</div>
+                    <div class="title">Services</div>
                     <section id="service"
-                        class="grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 mobile-service text-center"></section>
+                        class="grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 text-center"></section>
                 </div>
             </section>
 
@@ -246,8 +246,14 @@
     function responsive() {
         if (window.innerWidth < 1000) {
             $('.mobile').removeClass("hidden");
+            $('#service').removeClass("grid");
+            $('#service').removeClass("grid-flow-col");
+            $('#service').removeClass("grid-cols-3");
+            $('#service').removeClass("grid-rows-2"); 
+            $('#service').removeClass("gap-4");
             $('.desktop').addClass("hidden");
         } else {
+            $('#mobile-service').removeClass("my-10");
             $('.mobile').addClass("hidden");
             $('.desktop').removeClass("hidden");
         }
@@ -268,7 +274,7 @@
                 appendText += addHTML("", "", service)
             })
 
-            $("#service").append(addHTML("", "", appendText))
+            $("#service").append(addHTML("my-10", "mobile-service", appendText))
             // $("#service").append(addHTML("font-bold", "",service.name))
         })
     }
