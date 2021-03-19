@@ -38,9 +38,14 @@
     width: 80px;
 }
 
-.nav {
+.nav, .phone {
     color: white; 
     text-decoration: none;
+}
+
+.phone:hover {
+    color: white; 
+
 }
 
 .nav:hover{
@@ -53,7 +58,7 @@
     margin: 20px;
 }
 
-.bg-blue {
+.bg-soft {
     background-color: #FFF3E7;
 }
 .carousel-inner {
@@ -62,6 +67,14 @@
 
 #carouselIndicator {
     height: 100%;
+}
+
+html {
+    scroll-padding: 200px;
+}
+
+.bg-blue {
+    background-color: #1874D2;
 }
 
 @media (max-width: 400px) {
