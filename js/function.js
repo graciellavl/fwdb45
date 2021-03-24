@@ -22,7 +22,7 @@ const service = [
     {
         icon: "fa fa-cutlery",
         name: "Food and Beverages",
-        desc: ["Restoran", "24 Hours Room Service", "Free Breakfast and Buffet"],
+        desc: ["Restoran", "24 Hours Room Service", "Free Breakfast"],
     },
     {
         icon: "fa fa-wifi",
@@ -42,7 +42,7 @@ const service = [
     {
         icon: "fa fa-bed",
         name: "Room",
-        desc: ["Air Conditioner", "Hot water"]
+        desc: ["Air Conditioner", "Hot water", "Premium TV Cable"]
     },
     {
         icon: "fa fa-car",

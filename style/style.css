@@ -78,11 +78,6 @@ html {
 }
 
 @media (max-width: 400px) {
-    .mobile-service {
-        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-        grid-template-rows: repeat(6, minmax(0, 1fr)) !important;
-        align-items: center;
-    }
     .carousel-inner, .cover-image, #carouselIndicator {
         height: auto;
     } 

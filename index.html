@@ -43,14 +43,50 @@
                 <div><a href="#" class="nav mx-3 main-font">K77 Hotels</a> </div>
                 <div class="flex navigation">
                     <div><a href="#" class="nav mx-3 main-font">Home</a> </div>
-                    <div><a href="#" class="nav mx-3 main-font">Offer</a> </div>
+                    <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav mx-3 main-font">Order</div>
                     <div><a href="#room-container" class="nav mx-3 main-font">Room</a> </div>
                     <div><a href="#service-container" class="nav mx-3 main-font">Service</a> </div>
-                    <div><a href="#review-container" class="nav mx-3 main-font">Review</a> </div>
-                    <div><a href="contact.html" class="nav mx-3 main-font">Contact</a> </div>
+                    <div><a href="contact.html" target="_blank" class="nav mx-3 main-font">Contact</a> </div>
                 </div>
             </div>
         </header>
+          
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Room Rate</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Book Now</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactList" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="contactList">Contact Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body flex flex-col align-center justify-around">
+                    <a class="btn btn-primary m-2" href="tel:076535577" target="_blank"><i class="fa fa-phone mr-1" aria-hidden="true"></i> Office</a>
+                    <a class="btn btn-primary m-2" href="tel:082282927977" target="_blank"><i class="fa fa-mobile mr-2" aria-hidden="true"></i> Phone</a>
+                    <a class="btn btn-primary m-2" href="https://wa.me/6282282927977" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                </div>
+            </div>
+            </div>
+        </div>
 
         <!-- Mobile -->
         <header id="mobile-navbar" class="navbar-container pri-color text-white mobile sticky top-0"
@@ -123,7 +159,7 @@
                         class="placeholder-gray-500 text-gray-800 p-2 input-angka rounded-xl" placeholder="Kids">
                 </div>
 
-                <button onclick="book()" style="flex-basis: 120px; height: 40px; align-self: center; margin-left: 20px;"
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="flex-basis: 120px; height: 40px; align-self: center; margin-left: 20px;"
                     class="sec-color rounded-xl hover:sec-color focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Book
                     Now</button>
             </div>
@@ -173,7 +209,7 @@
 
             <section id="button" class="w-full flex justify-center flex-col">
                 <button class="sec-color py-4 px-6 my-10 mx-auto rounded-md text-xl main-font font-bold w-1/2"
-                    onclick="book()"> Book Now </button>
+                data-bs-toggle="modal" data-bs-target="#exampleModal"> Book Now </button>
                 <div class="mobile" style="height: 60px"></div>
             </section>
         </div>
@@ -185,10 +221,10 @@
                     <i class="fa fa-home place-self-center" aria-hidden="true"></i>
                     <div class="icon-text text-xs"> Home </div>
                 </a>
-                <a class="footer-attr grid phone" href="tel:076535577">
+                <div data-bs-toggle="modal" data-bs-target="#contactModal" class="footer-attr grid phone">
                     <i class="fa fa-phone place-self-center" aria-hidden="true"></i>
                     <div class="icon-text text-xs"> Contact </div>
-                </a>
+                </div>
                 <a class="footer-attr grid phone" href="https://www.google.com/maps?gl=ID&hl=id&um=1&ie=UTF-8&fb=1&sa=X&geocode=KeN531Etr9MxMbjEybJJh7B0&daddr=Hotel+K77,+Jl.+Cempedak+No.15,+Rimba+Sekampung,+Dumai+Bar.,+Kota+Dumai,+Riau+28826" target="_blank">
                     <i class="fa fa-location-arrow place-self-center" aria-hidden="true"></i>
                     <div class="icon-text text-xs"> Visit </div>
@@ -278,6 +314,15 @@
             // $("#service").append(addHTML("font-bold", "",service.name))
         })
     }
+
+    // window.addEventListener('scroll', function() {
+    //     console.log("Scrollin'");
+    // });
+
+    // var scroll = window.requestAnimationFrame ||
+    //         function(callback){ window.setTimeout(callback, 1000/60)};
+
+
     $(document).ready(() => {
         responsive();
         attachGallery();
