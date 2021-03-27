@@ -30,9 +30,6 @@
 </head>
 
 <body>
-
-    <!-- NavBar -->
-
     <!-- Desktop -->
     <header id="desktop-navbar" style="z-index: 10;" class="navbar-container pri-color text-white sticky top-0 desktop">
         <div class="mx-auto flex justify-between w-5/6 py-4">
@@ -56,33 +53,11 @@
         </div>
     </header>
 
-    <!-- Content -->
-    <div class="w-1/2 m-auto md:w-100">
-        <div class="title mt-5">Contact</div>
-        <div class="text-md text-center mb-4">Feel free to contact us!</div>
-        <section class="flex flex-col lg:flex-row justify-around">
-            <a href="tel:082282927977" class="footer-attr grid no-style m-4">
-                <i class="fa fa-phone big-icon place-self-center" aria-hidden="true"></i>
-                <div class="icon-text text-xl text-center"> Phone </div>
-            </a>
-            <a href="tel:076535577" class="footer-attr grid no-style m-4">
-                <i class="fa fa-briefcase big-icon place-self-center" aria-hidden="true"></i>
-                <div class="icon-text text-xl text-center"> Office </div>
-            </a>
-            <a href="mailto:hotelk77@gmail.com" class="footer-attr grid no-style m-4">
-                <i class="fa fa-envelope big-icon place-self-center" aria-hidden="true"></i>
-                <div class="icon-text text-xl text-center"> Email </div>
-            </a>
-        </section>
-        <div class="mobile" style="height: 100px"></div>
-    </div>
-
-    <!-- Footer -->
 
     <!-- Mobile -->
     <footer id="mobile-footer" class="pri-color text-white mt-10 w-full fixed bottom-0 mobile">
         <div class="flex justify-around w-5/6 mx-auto py-3">
-            <a class="footer-attr grid phone" href="./index.html">
+            <a class="footer-attr grid phone" href="#">
                 <i class="fa fa-home place-self-center" aria-hidden="true"></i>
                 <div class="icon-text text-xs"> Home </div>
             </a>
@@ -98,6 +73,9 @@
             </a>
         </div>
     </footer>
+
+    <body>
+    </body>
 
     <!-- Desktop -->
     <footer id="desktop-footer" class="desktop">
@@ -159,10 +137,6 @@
     $(document).ready(() => {
         responsive();
     })
-
-    $(window).resize(() => {
-        responsive();
-    });
 </script>
 
 </html>

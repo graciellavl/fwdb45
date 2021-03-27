@@ -9,7 +9,7 @@
 
 
     <!-- Style -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./Asset/style/style.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -23,7 +23,7 @@
 
     <!-- Function -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/function.js"></script>
+    <script src="./Asset/js/function.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
         crossorigin="anonymous"></script>
@@ -40,51 +40,56 @@
         <header id="desktop-navbar" style="z-index: 10;"
             class="navbar-container pri-color text-white sticky top-0 desktop">
             <div class="mx-auto flex justify-between w-5/6 py-4">
-                <div><a href="#" class="nav mx-3 main-font">K77 Hotels</a> </div>
+                <div><a href="./index.html" class="nav mx-3 main-font">K77 Hotels</a> </div>
                 <div class="flex navigation">
-                    <div><a href="#" class="nav mx-3 main-font">Home</a> </div>
+                    <div><a href="./index.html" class="nav mx-3 main-font">Home</a> </div>
                     <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav mx-3 main-font">Order</div>
-                    <div><a href="#room-container" class="nav mx-3 main-font">Room</a> </div>
+                    <div><a href="./room.html" class="nav mx-3 main-font">Room</a> </div>
                     <div><a href="#service-container" class="nav mx-3 main-font">Service</a> </div>
-                    <div><a href="contact.html" target="_blank" class="nav mx-3 main-font">Contact</a> </div>
+                    <div><a href="./about.html" class="nav mx-3 main-font">About</a> </div>
+                    <div><a href="./gallery.html" class="nav mx-3 main-font">Gallery</a> </div>
+                    <div><a href="./contact.html" class="nav mx-3 main-font">Contact</a> </div>
                 </div>
             </div>
         </header>
-          
+
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Room Rate</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Room Rate</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal"
+                            data-bs-target="#contactModal">Book Now</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#contactModal">Book Now</button>
-                </div>
-            </div>
             </div>
         </div>
 
         <!-- Modal -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactList" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="contactList">Contact Now</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactList">Contact Now</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body flex flex-col align-center justify-around">
+                        <a class="btn btn-primary m-2" href="tel:076535577" target="_blank"><i class="fa fa-phone mr-1"
+                                aria-hidden="true"></i> Office</a>
+                        <a class="btn btn-primary m-2" href="tel:082282927977" target="_blank"><i
+                                class="fa fa-mobile mr-2" aria-hidden="true"></i> Phone</a>
+                        <a class="btn btn-primary m-2" href="https://wa.me/6282282927977" target="_blank"><i
+                                class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                    </div>
                 </div>
-                <div class="modal-body flex flex-col align-center justify-around">
-                    <a class="btn btn-primary m-2" href="tel:076535577" target="_blank"><i class="fa fa-phone mr-1" aria-hidden="true"></i> Office</a>
-                    <a class="btn btn-primary m-2" href="tel:082282927977" target="_blank"><i class="fa fa-mobile mr-2" aria-hidden="true"></i> Phone</a>
-                    <a class="btn btn-primary m-2" href="https://wa.me/6282282927977" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-                </div>
-            </div>
             </div>
         </div>
 
@@ -108,15 +113,15 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://lh3.googleusercontent.com/UCx1mL6p0y5lZvkE2VLu813M1xhVjZ5LMr4XQCtldfc0xkmIJdqQITTlr_RSLnPj0wJXUzMU3ABELKcT=w960-h960-n-o-v1"
+                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg"
                             class="d-block w-100" alt="..." height="100px">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://lh3.googleusercontent.com/-hQCsCaDt-vs/X4lAeOBMrdI/AAAAAAAAHLc/uDDleJGXbBY_CuESTwklUYROO8JJHWHpQCJUFGAYYCw/w960-h960-n-o-k-v1/"
+                        <img src="./Asset/img/room/STANDARD_DOUBLE/cover.jpg"
                             class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://lh3.googleusercontent.com/-I9o0ntnZz8Y/XyDWkg7srqI/AAAAAAAA2cI/cqFk1Gsg1u8Gd4YeAcDRcR8dUrkBwopMgCLIBGAYYCw/w960-h960-n-o-k-v1/"
+                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg"
                             class="d-block w-100" alt="...">
                     </div>
                 </div>
@@ -159,7 +164,8 @@
                         class="placeholder-gray-500 text-gray-800 p-2 input-angka rounded-xl" placeholder="Kids">
                 </div>
 
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="flex-basis: 120px; height: 40px; align-self: center; margin-left: 20px;"
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    style="flex-basis: 120px; height: 40px; align-self: center; margin-left: 20px;"
                     class="sec-color rounded-xl hover:sec-color focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">Book
                     Now</button>
             </div>
@@ -169,17 +175,41 @@
         <div class="body">
 
             <!-- Section Room -->
-            <section id="room-container">
-                <div class="my-10">
-
+            <section id="room-container" class="w-2/3 mx-auto my-20">
+                <div class="content">
+                    <div class="title">Room</div>
+                    <div class="description"></div>
                 </div>
-                <section id="room-1">
-                    <div class="content">
-                        <div class="title">Room</div>
-                        <div class="description"></div>
+                <div>
+                    <div class="room lg:flex my-10">
+                        <img src="./Asset/img/room/SUIT_DOUBLE/cover.jpg" alt="suit-double" class="room-image">
+                        <div class="lg:text-left content w-100 my-auto lg:mx-10 sm:mx-auto">
+                            <div class="room-title">Suit Double</div>
+                            <div class="room-desc">Description</div>
+                        </div>
                     </div>
-                    <img src="" alt="">
-                </section>
+                    <div class="room lg:flex my-10">
+                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg" alt="suit-double" class="room-image order-1">
+                        <div class="lg:text-right content w-100 my-auto lg:mx-10 sm:mx-auto">
+                            <div class="room-title">Deluxe Double</div>
+                            <div class="room-desc">Description</div>
+                        </div>
+                    </div>
+                    <div class="room lg:flex my-10">
+                        <img src="./Asset/img/room/STANDARD_DOUBLE/cover.jpg" alt="suit-double" class="room-image">
+                        <div class="lg:text-left content w-100 my-auto lg:mx-10 sm:mx-auto">
+                            <div class="room-title">Standart Double</div>
+                            <div class="room-desc">Description</div>
+                        </div>
+                    </div>
+                    <div class="room lg:flex my-10">
+                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg" alt="suit-double" class="room-image order-1">
+                        <div class="lg:text-right content w-100 my-auto lg:mx-10 sm:mx-auto">
+                            <div class="room-title">Standart Twin</div>
+                            <div class="room-desc">Description</div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Section service -->
@@ -187,7 +217,7 @@
                 <div class="w-5/6 mx-auto">
                     <div class="title">Services</div>
                     <section id="service"
-                        class="grid grid-flow-col grid-cols-3 grid-rows-2 gap-4 text-center"></section>
+                        class="lg:grid lg:grid-flow-col lg:grid-cols-3 lg:grid-rows-2 lg:gap-4 text-center"></section>
                 </div>
             </section>
 
@@ -209,7 +239,7 @@
 
             <section id="button" class="w-full flex justify-center flex-col">
                 <button class="sec-color py-4 px-6 my-10 mx-auto rounded-md text-xl main-font font-bold w-1/2"
-                data-bs-toggle="modal" data-bs-target="#exampleModal"> Book Now </button>
+                    data-bs-toggle="modal" data-bs-target="#exampleModal"> Book Now </button>
                 <div class="mobile" style="height: 60px"></div>
             </section>
         </div>
@@ -225,7 +255,9 @@
                     <i class="fa fa-phone place-self-center" aria-hidden="true"></i>
                     <div class="icon-text text-xs"> Contact </div>
                 </div>
-                <a class="footer-attr grid phone" href="https://www.google.com/maps?gl=ID&hl=id&um=1&ie=UTF-8&fb=1&sa=X&geocode=KeN531Etr9MxMbjEybJJh7B0&daddr=Hotel+K77,+Jl.+Cempedak+No.15,+Rimba+Sekampung,+Dumai+Bar.,+Kota+Dumai,+Riau+28826" target="_blank">
+                <a class="footer-attr grid phone"
+                    href="https://www.google.com/maps?gl=ID&hl=id&um=1&ie=UTF-8&fb=1&sa=X&geocode=KeN531Etr9MxMbjEybJJh7B0&daddr=Hotel+K77,+Jl.+Cempedak+No.15,+Rimba+Sekampung,+Dumai+Bar.,+Kota+Dumai,+Riau+28826"
+                    target="_blank">
                     <i class="fa fa-location-arrow place-self-center" aria-hidden="true"></i>
                     <div class="icon-text text-xs"> Visit </div>
                 </a>
@@ -237,9 +269,12 @@
             <div class="bg-blue text-white flex justify-around p-10 mt-10">
                 <div class="">
                     <div class="text-xl main-font pb-3 font-bold">K77 Hotels</div>
-                    <div class="text-sm"><i class="fa fa-phone mr-1" aria-hidden="true"></i><a href="tel:076535577" class="phone">(0765) 35577</a></div>
-                    <div class="text-sm"><i class="fa fa-mobile mr-2" aria-hidden="true"></i><a href="tel:082282927977" class="phone">0822-8292-7977</a></div>
-                    <div class="text-sm">Jl. Cempedak No.15, Rimba Sekampung <br>Dumai Barat, Kota Dumai, Riau 28826</div>
+                    <div class="text-sm"><i class="fa fa-phone mr-1" aria-hidden="true"></i><a href="tel:076535577"
+                            class="phone">(0765) 35577</a></div>
+                    <div class="text-sm"><i class="fa fa-mobile mr-2" aria-hidden="true"></i><a href="tel:082282927977"
+                            class="phone">0822-8292-7977</a></div>
+                    <div class="text-sm">Jl. Cempedak No.15, Rimba Sekampung <br>Dumai Barat, Kota Dumai, Riau 28826
+                    </div>
                     <div class="flex mt-4">
                         <a href="https://www.instagram.com/k77hotel/" target="_blank" class="phone">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -282,14 +317,14 @@
     function responsive() {
         if (window.innerWidth < 1000) {
             $('.mobile').removeClass("hidden");
-            $('#service').removeClass("grid");
-            $('#service').removeClass("grid-flow-col");
-            $('#service').removeClass("grid-cols-3");
-            $('#service').removeClass("grid-rows-2"); 
-            $('#service').removeClass("gap-4");
+            // $('#service').removeClass("grid");
+            // $('#service').removeClass("grid-flow-col");
+            // $('#service').removeClass("grid-cols-3");
+            // $('#service').removeClass("grid-rows-2"); 
+            // $('#service').removeClass("gap-4");
             $('.desktop').addClass("hidden");
         } else {
-            $('#mobile-service').removeClass("my-10");
+            // $('#mobile-service').removeClass("my-10");
             $('.mobile').addClass("hidden");
             $('.desktop').removeClass("hidden");
         }
@@ -329,7 +364,6 @@
         attachService();
     })
 
-    const mobileNavbar = $("#mobile-navbar").html();
     $(window).resize(() => {
         responsive();
     });
