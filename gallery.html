@@ -37,9 +37,7 @@
             <div><a href="./index.html" class="nav mx-3 main-font">K77 Hotels</a> </div>
             <div class="flex navigation">
                 <div><a href="./index.html" class="nav mx-3 main-font">Home</a> </div>
-                <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="nav mx-3 main-font">Order</div>
                 <div><a href="./room.html" class="nav mx-3 main-font">Room</a> </div>
-                <div><a href="#service-container" class="nav mx-3 main-font">Service</a> </div>
                 <div><a href="./about.html" class="nav mx-3 main-font">About</a> </div>
                 <div><a href="./gallery.html" class="nav mx-3 main-font">Gallery</a> </div>
                 <div><a href="./contact.html" class="nav mx-3 main-font">Contact</a> </div>
@@ -48,10 +46,30 @@
     </header>
 
     <!-- Mobile -->
-    <header id="mobile-navbar" class="navbar-container pri-color text-white mobile sticky top-0" style="z-index: 10;">
-        <div class="mx-auto py-4 text-center main-font text-xl">
-            K77 Hotels
+    <header class="mobile sticky top-0" style="z-index: 10;">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="pri-color p-4">
+                <div class="flex flex-col navigation justify-center">
+                    <div><a href="./index.html" class="nav justify-center my-2 main-font">Home</a> </div>
+                    <div><a href="./room.html" class="nav justify-center my-2 main-font">Room</a> </div>
+                    <div><a href="./about.html" class="nav justify-center my-2 main-font">About</a> </div>
+                    <div><a href="./gallery.html" class="nav justify-center my-2 main-font">Gallery</a> </div>
+                    <div><a href="./contact.html" class="nav justify-center my-2 main-font">Contact</a> </div>
+                </div>
+            </div>
         </div>
+        <nav class="navbar navbar-dark pri-color">
+            <div class="container-fluid">
+                <div class="mx-auto text-white text-center main-font text-xl">
+                    K77 Hotels
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
     <div class="title my-10">Gallery</div>
@@ -157,13 +175,13 @@
             $("#gallery").append(addGallery("trigger", id, image[i]));
         }
     })
-    
+
     var modal = document.getElementById("modal");
     function popUp(id, src) {
         modal.style.display = "block";
         console.log("id", id);
         console.log("src", src);
-        $("#image").attr("src",src);
+        $("#image").attr("src", src);
     }
 
     function closePopUp() {

@@ -53,6 +53,32 @@
             </div>
         </header>
 
+        <!-- Mobile -->
+        <header class="mobile sticky top-0" style="z-index: 10;">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="pri-color p-4">
+                    <div class="flex flex-col navigation justify-center">
+                        <div><a href="./index.html" class="nav justify-center my-2 main-font">Home</a> </div>
+                        <div><a href="./room.html" class="nav justify-center my-2 main-font">Room</a> </div>
+                        <div><a href="./about.html" class="nav justify-center my-2 main-font">About</a> </div>
+                        <div><a href="./gallery.html" class="nav justify-center my-2 main-font">Gallery</a> </div>
+                        <div><a href="./contact.html" class="nav justify-center my-2 main-font">Contact</a> </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark pri-color">
+                <div class="container-fluid">
+                    <div class="mx-auto text-white text-center main-font text-xl">
+                        K77 Hotels
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -93,14 +119,6 @@
             </div>
         </div>
 
-        <!-- Mobile -->
-        <header id="mobile-navbar" class="navbar-container pri-color text-white mobile sticky top-0"
-            style="z-index: 10;">
-            <div class="mx-auto py-4 text-center main-font text-xl">
-                K77 Hotels
-            </div>
-        </header>
-
         <div class="cover-image">
             <div id="carouselIndicator" class="carousel slide mobile-carousel" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -113,16 +131,14 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg"
-                            class="d-block w-100" alt="..." height="100px">
+                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg" class="d-block w-100" alt="..."
+                            height="100px">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Asset/img/room/STANDARD_DOUBLE/cover.jpg"
-                            class="d-block w-100" alt="...">
+                        <img src="./Asset/img/room/STANDARD_DOUBLE/cover.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg"
-                            class="d-block w-100" alt="...">
+                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicator"
@@ -189,7 +205,8 @@
                         </div>
                     </div>
                     <div class="room lg:flex my-10">
-                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg" alt="suit-double" class="room-image order-1">
+                        <img src="./Asset/img/room/DELUXE_DOUBLE/cover.jpg" alt="suit-double"
+                            class="room-image order-1">
                         <div class="lg:text-right content w-100 my-auto lg:mx-10 sm:mx-auto">
                             <div class="room-title">Deluxe Double</div>
                             <div class="room-desc">Description</div>
@@ -203,7 +220,8 @@
                         </div>
                     </div>
                     <div class="room lg:flex my-10">
-                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg" alt="suit-double" class="room-image order-1">
+                        <img src="./Asset/img/room/STANDARD_TWIN_ROOM/cover.jpg" alt="suit-double"
+                            class="room-image order-1">
                         <div class="lg:text-right content w-100 my-auto lg:mx-10 sm:mx-auto">
                             <div class="room-title">Standart Twin</div>
                             <div class="room-desc">Description</div>
@@ -346,7 +364,6 @@
             })
 
             $("#service").append(addHTML("my-10", "mobile-service", appendText))
-            // $("#service").append(addHTML("font-bold", "",service.name))
         })
     }
 

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Asset/style/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Function -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Asset/js/function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Desktop -->
+    <header id="desktop-navbar" style="z-index: 10;" class="navbar-container pri-color text-white sticky top-0 desktop">
+        <div class="mx-auto flex justify-between w-5/6 py-4">
+            <div><a href="./index.html" class="nav mx-3 main-font">K77 Hotels</a> </div>
+            <div class="flex navigation">
+                <div><a href="./index.html" class="nav mx-3 main-font">Home</a> </div>
+                <div><a href="./room.html" class="nav mx-3 main-font">Room</a> </div>
+                <div><a href="./about.html" class="nav mx-3 main-font">About</a> </div>
+                <div><a href="./gallery.html" class="nav mx-3 main-font">Gallery</a> </div>
+                <div><a href="./contact.html" class="nav mx-3 main-font">Contact</a> </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile -->
+    <header class="mobile sticky top-0" style="z-index: 10;">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="pri-color p-4">
+                <div class="flex flex-col navigation justify-center">
+                    <div><a href="./index.html" class="nav justify-center my-2 main-font">Home</a> </div>
+                    <div><a href="./room.html" class="nav justify-center my-2 main-font">Room</a> </div>
+                    <div><a href="./about.html" class="nav justify-center my-2 main-font">About</a> </div>
+                    <div><a href="./gallery.html" class="nav justify-center my-2 main-font">Gallery</a> </div>
+                    <div><a href="./contact.html" class="nav justify-center my-2 main-font">Contact</a> </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark pri-color">
+            <div class="container-fluid">
+                <div class="mx-auto text-white text-center main-font text-xl">
+                    K77 Hotels
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Mobile -->
+    <footer id="mobile-footer" class="pri-color text-white mt-10 w-full fixed bottom-0 mobile">
+        <div class="flex justify-around w-5/6 mx-auto py-3">
+            <a class="footer-attr grid phone" href="#">
+                <i class="fa fa-home place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Home </div>
+            </a>
+            <div data-bs-toggle="modal" data-bs-target="#contactModal" class="footer-attr grid phone">
+                <i class="fa fa-phone place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Contact </div>
+            </div>
+            <a class="footer-attr grid phone"
+                href="https://www.google.com/maps?gl=ID&hl=id&um=1&ie=UTF-8&fb=1&sa=X&geocode=KeN531Etr9MxMbjEybJJh7B0&daddr=Hotel+K77,+Jl.+Cempedak+No.15,+Rimba+Sekampung,+Dumai+Bar.,+Kota+Dumai,+Riau+28826"
+                target="_blank">
+                <i class="fa fa-location-arrow place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Visit </div>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Desktop -->
+    <footer id="desktop-footer" class="desktop">
+        <div class="bg-blue text-white flex justify-around p-10 mt-10">
+            <div class="">
+                <div class="text-xl main-font pb-3 font-bold">K77 Hotels</div>
+                <div class="text-sm"><i class="fa fa-phone mr-1" aria-hidden="true"></i><a href="tel:076535577"
+                        class="phone">(0765) 35577</a></div>
+                <div class="text-sm"><i class="fa fa-mobile mr-2" aria-hidden="true"></i><a href="tel:082282927977"
+                        class="phone">0822-8292-7977</a></div>
+                <div class="text-sm">Jl. Cempedak No.15, Rimba Sekampung <br>Dumai Barat, Kota Dumai, Riau 28826</div>
+                <div class="flex mt-4">
+                    <a href="https://www.instagram.com/k77hotel/" target="_blank" class="phone">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mapouter p-2">
+                <div class="gmap_canvas"><iframe width="270" height="180" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Jl.%20Cempedak%20No.15,%20Rimba%20Sekampung,%20Dumai%20Bar.,%20Kota%20Dumai,%20Riau%2028826&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://yggtorrent-fr.com"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 200px;
+                            width: 300px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embed google map wordpress</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 200px;
+                            width: 300px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="pri-color text-white text-center main-font p-3">
+            © 2021, All Rights Reserved. K77 Hotels
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function responsive() {
+        if (window.innerWidth < 1000) {
+            $('.mobile').removeClass("hidden");
+            $('.desktop').addClass("hidden");
+        } else {
+            $('.mobile').addClass("hidden");
+            $('.desktop').removeClass("hidden");
+        }
+    }
+    $(document).ready(() => {
+        responsive();
+    })
+    $(window).resize(() => {
+        responsive();
+    });
+</script>
+
+</html>
