@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Asset/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Function -->
+    <script src="./Asset/js/todo.js"></script>
+
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="fs-1 text-center my-5">To Do List</div>
+        <div id="inputTodo" class="m-auto justify-content-between mb-3" style="display: flex;">
+            <input type="text" id="todo" placeholder="New To Do" class="form-control me-3" style="width: 90%;">
+            <button onclick="addTodo()" type="button" class="btn btn-dark">Submit</button>
+        </div>
+
+        <div>
+            <ol id="todolist" class="list-group list-group-numbered">
+
+            </ol>
+        </div>
+    </div>
+</body>
+
+<script>
+
+</script>
+
+</html>
