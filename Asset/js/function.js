@@ -89,6 +89,12 @@ const gallery = [
 ];
 
 const image = [
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/d87eac47e2e1a76b.jpg",
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/3137af22cfa995c5.jpg",
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/bf02c00cc8e99f9f.jpg",
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/bde4d766ccf65036.jpg",
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/7ec32067df13f8ba.jpg",
+  "https://images.oyoroomscdn.com/uploads/hotel_image/80872/large/55c617962e115e39.jpg",
   "./Asset/img/room/DELUXE_DOUBLE/cover.webp",
   "./Asset/img/room/DELUXE_DOUBLE/DSC06050.webp",
   "./Asset/img/room/DELUXE_DOUBLE/DSC06053.webp",

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./Asset/style/style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- Function -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Asset/js/function.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Desktop -->
+    <header id="desktop-navbar" style="z-index: 10;" class="navbar-container pri-color text-white sticky top-0 desktop">
+        <div class="mx-auto flex justify-between w-5/6 py-4">
+            <div><a href="./index.html" class="nav mx-3 main-font">K77 Hotels</a> </div>
+            <div class="flex navigation">
+                <div><a href="./index.html" class="nav mx-3 main-font">Home</a> </div>
+                <div><a href="./review.html" class="nav mx-3 main-font">Review</a> </div>
+                <div><a href="./about.html" class="nav mx-3 main-font">About</a> </div>
+                <div><a href="./gallery.html" class="nav mx-3 main-font">Gallery</a> </div>
+                <div><a href="./contact.html" class="nav mx-3 main-font">Contact</a> </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile -->
+    <header class="mobile sticky top-0" style="z-index: 10;">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="pri-color p-4">
+                <div class="flex flex-col navigation justify-center">
+                    <div><a href="./index.html" class="nav justify-center my-2 main-font">Home</a> </div>
+                    <div><a href="./review.html" class="nav justify-center my-2 main-font">Review</a> </div>
+                    <div><a href="./about.html" class="nav justify-center my-2 main-font">About</a> </div>
+                    <div><a href="./gallery.html" class="nav justify-center my-2 main-font">Gallery</a> </div>
+                    <div><a href="./contact.html" class="nav justify-center my-2 main-font">Contact</a> </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark pri-color">
+            <div class="container-fluid">
+                <div class="mx-auto text-white text-center main-font text-xl">
+                    K77 Hotels
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="title my-10">Review</div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipOS77Q7tMFsW3BDBbOqO9bjbofQ_FNOuujJgOqn=w325-h182-k-no" width="100%" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Jefril Sani</h5>
+                        <p class="card-text">Tempat bersih aman nyaman..
+                        </p>
+                        <p class="card-text flex align-center"><small class="text-muted">8 bulan yang lalu di </small><a
+                                class="p-1"
+                                href="https://www.google.com/travel/hotels/entity/CgoIuImnlpvpodh0EAE/reviews?g2lb=2502548%2C2503780%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371334%2C4401769%2C4419364%2C4482438%2C4486153%2C4491350%2C4517258%2C4523593%2C4270859%2C4284970%2C4291517&hl=id-ID&gl=id&ssta=1&rp=ELiJp5ab6aHYdDgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAq4vW09rvAhUAAAAAHQAAAAAQBA&ts=CAESABpJCisSJzIlMHgzMWQzYWYyZDUxZGY3OWUzOjB4NzRiMDg3NDliMmM5YzRiOBoAEhoSFAoHCOUPEAQYBBIHCOUPEAQYBRgBMgIQACoECgAaAA"><img
+                                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                                    height="12px" width="14px" alt=""></a></p>
+                        <div class="flex">
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Put ra</h5>
+                        <p class="card-text">Yang jelas bersih, harganya pun terjangkau,,,,, air minum yang gratis nya
+                            kalau bisa ganti yang 600 mili</p>
+                        <p class="card-text flex align-center"><small class="text-muted">sebulan yang lalu di </small><a
+                                class="p-1"
+                                href="https://www.google.com/travel/hotels/entity/CgoIuImnlpvpodh0EAE/reviews?g2lb=2502548%2C2503780%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371334%2C4401769%2C4419364%2C4482438%2C4486153%2C4491350%2C4517258%2C4523593%2C4270859%2C4284970%2C4291517&hl=id-ID&gl=id&ssta=1&rp=ELiJp5ab6aHYdDgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAq4vW09rvAhUAAAAAHQAAAAAQBA&ts=CAESABpJCisSJzIlMHgzMWQzYWYyZDUxZGY3OWUzOjB4NzRiMDg3NDliMmM5YzRiOBoAEhoSFAoHCOUPEAQYBBIHCOUPEAQYBRgBMgIQACoECgAaAA"><img
+                                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                                    height="12px" width="14px" alt=""></a></p>
+                        <div class="flex">
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipNQzbJcM94-WfWUdNP49QPoWRLP362CY_FBytJm=w325-h182-k-no" width="100%" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipPcJZfVhmXLxqMgKL4PaFvIt-IMq2G132JONykn=w325-h243-k-no" width="100%" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">LB Wicaksono</h5>
+                        <p class="card-text">Lokasi hotel cukup mudah dijangkau. Walaupun sepertinya hotel ini sudah
+                            cukup lama, tetapi termaintenance dengan baik. Front office yang bertugas pada saat check-in
+                            cukup ramah, begitu juga dengan security yang berinisiatif membantu parkir. Kamar deluxe 101
+                            hampir tidak ada masalah, kecuali air yang terus menetes dari shower yg sedikit mengganggu.
+                            Tempat tidur nyaman, AC dingin, channel tv cukup variatif. Jaringan wifi tidak mau
+                            tersambung sama sekali padahal dekat dengan lobby.
+                        </p>
+                        <p class="card-text flex align-center"><small class="text-muted">8 bulan yang lalu di </small><a
+                                class="p-1"
+                                href="https://www.google.com/travel/hotels/entity/CgoIuImnlpvpodh0EAE/reviews?g2lb=2502548%2C2503780%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371334%2C4401769%2C4419364%2C4482438%2C4486153%2C4491350%2C4517258%2C4523593%2C4270859%2C4284970%2C4291517&hl=id-ID&gl=id&ssta=1&rp=ELiJp5ab6aHYdDgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAq4vW09rvAhUAAAAAHQAAAAAQBA&ts=CAESABpJCisSJzIlMHgzMWQzYWYyZDUxZGY3OWUzOjB4NzRiMDg3NDliMmM5YzRiOBoAEhoSFAoHCOUPEAQYBBIHCOUPEAQYBRgBMgIQACoECgAaAA"><img
+                                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                                    height="12px" width="14px" alt=""></a></p>
+                        <div class="flex">
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Azrai 093</h5>
+                        <p class="card-text">Penginapan yang nyaman sesuai kantong menengah kebawah, berada di kota
+                            dumai dengan fasilitas yang nyaman, cocok bagi traveler yang menempuh perjalanan jauh atau
+                            yang lagi perjalanan dinas/kerja sehingga membutuhkan istrahat sejenak.
+                        </p>
+                        <p class="card-text flex align-center"><small class="text-muted">sebulan yang lalu di </small><a
+                                class="p-1"
+                                href="https://www.google.com/travel/hotels/entity/CgoIuImnlpvpodh0EAE/reviews?g2lb=2502548%2C2503780%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371334%2C4401769%2C4419364%2C4482438%2C4486153%2C4491350%2C4517258%2C4523593%2C4270859%2C4284970%2C4291517&hl=id-ID&gl=id&ssta=1&rp=ELiJp5ab6aHYdDgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&ved=0CAAQ5JsGahcKEwjAq4vW09rvAhUAAAAAHQAAAAAQBA&ts=CAESABpJCisSJzIlMHgzMWQzYWYyZDUxZGY3OWUzOjB4NzRiMDg3NDliMmM5YzRiOBoAEhoSFAoHCOUPEAQYBBIHCOUPEAQYBRgBMgIQACoECgAaAA"><img
+                                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                                    height="12px" width="14px" alt=""></a></p>
+                        <div class="flex">
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                            <i style="color:#FBBC04" class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipO9XTLGjRN_NlXyAivbkOacEd_HBj7bNh85RUJ4=w325-h182-k-no" width="100%" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Mobile -->
+    <footer id="mobile-footer" class="pri-color text-white mt-10 w-full fixed bottom-0 mobile">
+        <div class="flex justify-around w-5/6 mx-auto py-3">
+            <a class="footer-attr grid phone" href="#">
+                <i class="fa fa-home place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Home </div>
+            </a>
+            <div data-bs-toggle="modal" data-bs-target="#contactModal" class="footer-attr grid phone">
+                <i class="fa fa-phone place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Contact </div>
+            </div>
+            <a class="footer-attr grid phone"
+                href="https://www.google.com/maps?gl=ID&hl=id&um=1&ie=UTF-8&fb=1&sa=X&geocode=KeN531Etr9MxMbjEybJJh7B0&daddr=Hotel+K77,+Jl.+Cempedak+No.15,+Rimba+Sekampung,+Dumai+Bar.,+Kota+Dumai,+Riau+28826"
+                target="_blank">
+                <i class="fa fa-location-arrow place-self-center" aria-hidden="true"></i>
+                <div class="icon-text text-xs"> Visit </div>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Desktop -->
+    <footer id="desktop-footer" class="desktop">
+        <div class="bg-blue text-white flex justify-around p-10 mt-10">
+            <div class="">
+                <div class="text-xl main-font pb-3 font-bold">K77 Hotels</div>
+                <div class="text-sm"><i class="fa fa-phone mr-1" aria-hidden="true"></i><a href="tel:076535577"
+                        class="phone">(0765) 35577</a></div>
+                <div class="text-sm"><i class="fa fa-mobile mr-2" aria-hidden="true"></i><a href="tel:082282927977"
+                        class="phone">0822-8292-7977</a></div>
+                <div class="text-sm">Jl. Cempedak No.15, Rimba Sekampung <br>Dumai Barat, Kota Dumai, Riau 28826</div>
+                <div class="flex mt-4">
+                    <a href="https://www.instagram.com/k77hotel/" target="_blank" class="phone">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mapouter p-2">
+                <div class="gmap_canvas"><iframe width="270" height="180" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Jl.%20Cempedak%20No.15,%20Rimba%20Sekampung,%20Dumai%20Bar.,%20Kota%20Dumai,%20Riau%2028826&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://yggtorrent-fr.com"></a><br>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 200px;
+                            width: 300px;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">embed google map wordpress</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 200px;
+                            width: 300px;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div class="pri-color text-white text-center main-font p-3">
+            © 2021, All Rights Reserved. K77 Hotels
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    function responsive() {
+        if (window.innerWidth < 1000) {
+            $('.mobile').removeClass("hidden");
+            $('.desktop').addClass("hidden");
+        } else {
+            $('.mobile').addClass("hidden");
+            $('.desktop').removeClass("hidden");
+        }
+    }
+    $(document).ready(() => {
+        responsive();
+    })
+    $(window).resize(() => {
+        responsive();
+    });
+</script>
+
+</html>

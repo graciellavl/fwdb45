@@ -14,10 +14,23 @@
 
     <!-- Function -->
     <script src="./Asset/js/todo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
 <body>
+    <style>
+        .badge:hover {
+            cursor: pointer;
+        }
+        .badge {
+            text-decoration: none !important;
+        }
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
     <div class="container-sm">
         <div class="fs-1 text-center my-5">To Do List</div>
         <div id="inputTodo" class="m-auto justify-content-between mb-3" style="display: flex;">
@@ -34,7 +47,15 @@
 </body>
 
 <script>
-
+$(document).ready(() => {
+    var todoList = JSON.parse(localStorage.getItem("todo"));
+    if (todoList != null) {
+        todoList.forEach(todo => {
+            console.log("ok")
+            loadTodo(todo)
+        });
+    }
+})
 </script>
 
 </html>
