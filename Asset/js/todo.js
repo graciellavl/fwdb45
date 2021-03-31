@@ -99,7 +99,6 @@ function todoFormat(classname, Category, Title, id) {
     ')">' +
     Title +
     "</div>" +
-    Category +
     '</div><span class="badge bg-primary rounded-pill" onclick="delTodo(' +
     id +
     ')">&times;</span></li>'
