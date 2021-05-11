@@ -193,4 +193,10 @@ html {
       width: 100%;
       height: auto;
   }
+
+  .carousel-image {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+  }
 }
